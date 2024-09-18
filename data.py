@@ -53,7 +53,6 @@ etudiant_prof = cursor.fetchall()
 
 liste_etudiant_prof = []
 
-
 for i in etudiant_prof:
     dic_etudiant_prof = {
         "prenom_prof": i[0],
