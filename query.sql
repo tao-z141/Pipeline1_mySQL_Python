@@ -1,8 +1,8 @@
 create database Ecole;
 use Ecole;
 create table etudiant ( 
-	student_id int primary key auto_increment,
-	nom varchar(100),
+    student_id int primary key auto_increment,
+    nom varchar(100),
     prenom varchar(100),
     numero_salle int,
     telephone varchar(20) not null unique,
@@ -12,11 +12,11 @@ create table etudiant (
 ) ;
 
 create table enseignants (
-	teacher_id int primary key auto_increment,
+    teacher_id int primary key auto_increment,
     prenom varchar(50),
     nom varchar(50),
     numero_salle varchar(50),
-	departement varchar(100),
+    departement varchar(100),
     annee_obtention  year,
     email varchar(100) unique,
     telephone varchar(50) not null unique,
